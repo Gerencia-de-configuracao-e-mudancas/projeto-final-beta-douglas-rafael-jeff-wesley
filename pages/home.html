@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>CineBox</title>
+</head>
+<header class="top-bar">
+    <div class="user-area">
+        <img src="../images/logo.png" alt="logo">
+        <span id="welcome"></span>
+        <button id="logout-btn">Sair</button>
+    </div>
+</header>
+<body>
+    
+    <div class="top-div">
+        <h1>FILMES</h1>
+    </div>
+    
+    <div class="gender-bar">
+        <a class="gender-button" onclick="filterMovies('Ação')" >Ação</a>
+        <a class="gender-button" onclick="filterMovies('Comédia')" >Comédia</a>
+        <a class="gender-button" onclick="filterMovies('Ficção Científica')" >Ficção Científica</a>
+        <a class="gender-button" onclick="filterMovies('Romance')" >Romance</a>
+        <a class="gender-button" onclick="filterMovies('Animação')" >Animações</a>
+        <a class="gender-button" onclick="filterMovies('Gótico')" >Góticos</a>
+    
+    </div>
+    
+    <div class="filmes" id="filmes"></div>
+    
+    <script src="../scripts/data.js"></script>
+    <script src="../scripts/filmes.js"></script>
+    <script src="../scripts/auth/logout.js"></script>
+</body>
+</html>
