@@ -20,7 +20,7 @@ const movies = [
     title: "Titanic",
     genre: "Romance",
     description: "Um romance épico a bordo do navio Titanic.",
-      poster: "../images/titanic.jpg",
+    poster: "../images/titanic.jpg",
     synopsis: "Jack e Rose vivem um romance proibido durante a viagem inaugural do Titanic."
   },
   {
@@ -28,7 +28,7 @@ const movies = [
     title: "Toy Story",
     genre: "Animação",
     description: "Brinquedos ganham vida quando os humanos não estão por perto.",
-      poster: "../images/toystory.jpg",
+    poster: "../images/toystory.jpg",
     synopsis: "Woody e Buzz Lightyear enfrentam desafios para voltar ao seu dono, Andy."
   },
   {
@@ -36,7 +36,7 @@ const movies = [
     title: "Drácula de Bram Stoker",
     genre: "Gótico",
     description: "A clássica história do vampiro Drácula.",
-      poster: "../images/dracula.jpg",
+    poster: "../images/dracula.jpg",
     synopsis: "O conde Drácula busca amor e vingança em Londres, espalhando terror e sedução."
   },
   {
@@ -44,7 +44,7 @@ const movies = [
     title: "Missão Impossível",
     genre: "Ação",
     description: "Um agente secreto enfrenta missões perigosas ao redor do mundo.",
-      poster: "../images/impossible.jpg",
+    poster: "../images/impossible.jpg",
     synopsis: "Ethan Hunt lidera uma equipe para impedir ameaças globais e salvar o mundo."
   },
   {
@@ -52,7 +52,7 @@ const movies = [
     title: "O Senhor dos Anéis",
     genre: "Fantasia",
     description: "Uma jornada épica em um mundo de fantasia.",
-      poster: "../images/senhordosaneis.jpg",
+    poster: "../images/senhordosaneis.jpg",
     synopsis: "Um hobbit parte em uma jornada para destruir um anel mágico e salvar o mundo."
   },
   {
@@ -60,7 +60,7 @@ const movies = [
     title: "Cidade de Deus",
     genre: "Drama",
     description: "A história de dois jovens crescendo em uma favela do Rio de Janeiro.",
-      poster: "../images/cidadedeus.jpg",
+    poster: "../images/cidadedeus.jpg",
     synopsis: "Buscapé e Dadinho vivem na Cidade de Deus, enfrentando violência, escolhas e o destino de suas vidas."
   },
   {
@@ -68,7 +68,7 @@ const movies = [
     title: "John Wick",
     genre: "Ação",
     description: "Um ex-assassino busca vingança após perder seu cachorro.",
-      poster: "../images/johnwick.jpeg",
+    poster: "../images/johnwick.jpeg",
     synopsis: "John Wick retorna ao submundo do crime para se vingar de quem destruiu sua vida."
   },
   {
@@ -76,7 +76,7 @@ const movies = [
     title: "Mad Max: Estrada da Fúria",
     genre: "Ação",
     description: "Em um mundo pós-apocalíptico, um guerreiro luta pela sobrevivência.",
-      poster: "../images/madmax.jpg",
+    poster: "../images/madmax.jpg",
     synopsis: "Max e Furiosa enfrentam tiranos e buscam liberdade em um deserto caótico."
   },
   {
@@ -84,7 +84,7 @@ const movies = [
     title: "Duro de Matar",
     genre: "Ação",
     description: "Um policial enfrenta terroristas em um prédio durante o Natal.",
-      poster: "../images/durodematar.jpg",
+    poster: "../images/durodematar.jpg",
     synopsis: "John McClane luta contra terroristas para salvar sua esposa e outros reféns."
   },
   {
@@ -92,7 +92,7 @@ const movies = [
     title: "Missão Impossível: Protocolo Fantasma",
     genre: "Ação",
     description: "Ethan Hunt enfrenta uma ameaça global.",
-      poster: "../images/missionimpo.jpg",
+    poster: "../images/missionimpo.jpg",
     synopsis: "Ethan Hunt e sua equipe precisam impedir um ataque nuclear."
   },
   {
@@ -100,7 +100,7 @@ const movies = [
     title: "O Protetor",
     genre: "Ação",
     description: "Um ex-agente ajuda pessoas em perigo e enfrenta criminosos.",
-      poster: "../images/oprotetor.jpg",
+    poster: "../images/oprotetor.jpg",
     synopsis: "Robert McCall usa suas habilidades para proteger inocentes e combater o crime."
   },
   {
@@ -108,7 +108,7 @@ const movies = [
     title: "Os Mercenários",
     genre: "Ação",
     description: "Um grupo de mercenários enfrenta missões explosivas ao redor do mundo.",
-      poster: "../images/osmercenarios.jpg",
+    poster: "../images/osmercenarios.jpg",
     synopsis: "Barney Ross lidera um time de mercenários em missões perigosas e cheias de ação."
   },
   {
@@ -116,7 +116,7 @@ const movies = [
     title: "Velocidade Máxima",
     genre: "Ação",
     description: "Um policial precisa salvar passageiros de um ônibus com uma bomba.",
-      poster: "../images/velocidademaxima.jpg",
+    poster: "../images/velocidademaxima.jpg",
     synopsis: "Jack Traven enfrenta um criminoso e tenta salvar todos em um ônibus em alta velocidade."
   },
   {
@@ -400,3 +400,49 @@ const movies = [
     synopsis: "Sulley e Mike precisam devolver a menina Boo ao seu mundo sem serem descobertos."
   },
 ]
+
+// parte do carrossel da issue de laerte ficou aqui pq fez mais sentido, já que usa diretamente a lista de filmes
+
+const destaque = [...movies].sort(() => Math.random() - 0.5).slice(0, 5);
+
+const poster = document.getElementById("heroPoster");
+const titulo = document.getElementById("heroTitle");
+const genero = document.getElementById("heroGenre");
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+
+let atual = 0;
+let intervaloEntreCards;
+
+function renderHero(){
+  poster.src = destaque[atual].poster;
+  titulo.innerText = destaque[atual].title;
+  genero.innerText = destaque[atual].genre;
+}
+
+function iniciarNovoIntervalo() {
+  clearInterval(intervaloEntreCards);
+
+  intervaloEntreCards = setInterval( ()=> {next.click();} ,2500);
+}
+
+renderHero();
+iniciarNovoIntervalo();
+
+next.onclick=()=>{
+  atual++;
+  
+  if(atual==destaque.length) atual = 0;
+
+  renderHero();
+  iniciarNovoIntervalo();
+}
+
+prev.onclick=()=>{
+  atual--;
+  
+  if(atual<0) atual = destaque.length-1;
+  
+  renderHero();
+  iniciarNovoIntervalo();
+}
