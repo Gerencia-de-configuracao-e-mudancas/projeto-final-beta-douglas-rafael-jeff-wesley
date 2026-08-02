@@ -14,23 +14,49 @@
       <h1>CineBox</h1>
     </nav>
 
-    <section class="hero-content">
-      <h2>Descubra, avalie e comente seus filmes favoritos</h2>
-      <p>
-        O CineBox é uma plataforma para quem ama cinema
-        e quer compartilhar opiniões sobre os filmes do momento.
-      </p>
+    <div class="hero-body">
+      
+      <section class="hero-content">
+        <h2>Descubra, avalie e comente seus filmes favoritos</h2>
+        <p>
+          O CineBox é uma plataforma para quem ama cinema
+          e quer compartilhar opiniões sobre os filmes do momento.
+        </p>
+    
+        <div class="cta">
+          <a href="pages/cadastro.html" class="btn">Começar agora</a>
+          <a href="pages/login.html" class="btn-outline">Já tenho conta</a>
+        </div>
+      </section>
 
-      <div class="cta">
-        <a href="pages/cadastro.html" class="btn">Começar agora</a>
-        <a href="pages/login.html" class="btn-outline">Já tenho conta</a>
-      </div>
-    </section>
+      <section class="hero-carousel">
+
+        <button id="prev">&#10094;</button>
+
+          <div class="carousel-card">
+              <a href="pages/cadastro.html">
+                <img id="heroPoster">
+              </a>
+
+              <div class="movie-info">
+                  <h3 id="heroTitle"></h3>
+                  <p id="heroGenre"></p>
+              </div>
+
+          </div>
+
+          <button id="next">&#10095;</button>
+
+      </section>
+
+    </div>
+  
   </header>
   <footer>
     All rights reserved © 2026<br>
     <br>
   </footer>
 
+  <script src="scripts/data.js"></script>
 </body>
 </html>
