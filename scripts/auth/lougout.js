@@ -9,7 +9,7 @@ function checkLogin(){
 
     const welcome = document.getElementById("welcome");
     if(welcome){
-        welcome.innerText = `Olá, ${user.name}`;
+        welcome.innerText = user.name;
     }
 }
 // o proprio nome ja diz
