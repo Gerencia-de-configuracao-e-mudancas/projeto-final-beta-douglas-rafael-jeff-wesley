@@ -415,7 +415,7 @@ let atual = 0;
 let intervaloEntreCards;
 
 function renderHero(){
-  poster.src = destaque[atual].poster;
+  poster.src = destaque[atual].poster.replace("../", "");
   titulo.innerText = destaque[atual].title;
   genero.innerText = destaque[atual].genre;
 }
