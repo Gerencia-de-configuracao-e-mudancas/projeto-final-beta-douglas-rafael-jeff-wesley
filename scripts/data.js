@@ -3,400 +3,446 @@ const movies = [
     id: 1,
     title: "Interestelar",
     genre: "Ficção Científica",
-    description: "Uma jornada épica pelo espaço e pelo tempo.",
+    synopsis: "Uma jornada épica pelo espaço e pelo tempo.",
     poster: "../images/interestelar.png",
-    synopsis: "Um grupo de exploradores viaja pelo espaço em busca de um novo lar para a humanidade."
+    description: "Em um futuro onde a Terra está se tornando inabitável, um grupo de astronautas atravessa um buraco de minhoca em busca de um novo planeta para a humanidade. Enquanto enfrenta desafios científicos e emocionais, a missão coloca à prova os limites do tempo, do espaço e dos laços familiares."
   },
   {
     id: 2,
     title: "As Branquelas",
     genre: "Comédia",
-    description: "Dois agentes do FBI se disfarçam de socialites para investigar um crime.",
+    synopsis: "Dois agentes do FBI se disfarçam de socialites para investigar um crime.",
     poster: "../images/branquelas.jpg",
-    synopsis: "Dois agentes do FBI se disfarçam de mulheres brancas ricas para proteger socialites e investigar um crime."
+    description: "Após uma missão dar errado, dois agentes do FBI assumem a identidade de duas irmãs milionárias para impedir um plano criminoso. Entre situações constrangedoras, festas luxuosas e muito humor, eles fazem de tudo para manter o disfarce sem levantar suspeitas."
   },
   {
     id: 3,
     title: "Titanic",
     genre: "Romance",
-    description: "Um romance épico a bordo do navio Titanic.",
-      poster: "../images/titanic.jpg",
-    synopsis: "Jack e Rose vivem um romance proibido durante a viagem inaugural do Titanic."
+    synopsis: "Um romance épico a bordo do navio Titanic.",
+    poster: "../images/titanic.jpg",
+    description: "Durante a viagem inaugural do Titanic, Jack e Rose se apaixonam apesar das diferenças sociais que os separam. Enquanto vivem um romance intenso, precisam enfrentar uma tragédia que mudará suas vidas para sempre."
   },
   {
     id: 4,
     title: "Toy Story",
     genre: "Animação",
-    description: "Brinquedos ganham vida quando os humanos não estão por perto.",
-      poster: "../images/toystory.jpg",
-    synopsis: "Woody e Buzz Lightyear enfrentam desafios para voltar ao seu dono, Andy."
+    synopsis: "Brinquedos ganham vida quando os humanos não estão por perto.",
+    poster: "../images/toystory.jpg",
+    description: "Woody, Buzz Lightyear e outros brinquedos vivem aventuras secretas sempre que os humanos não estão olhando. Quando acabam longe de casa, eles precisam superar suas diferenças e trabalhar juntos para reencontrar seu dono, Andy."
   },
   {
     id: 5,
     title: "Drácula de Bram Stoker",
     genre: "Gótico",
-    description: "A clássica história do vampiro Drácula.",
-      poster: "../images/dracula.jpg",
-    synopsis: "O conde Drácula busca amor e vingança em Londres, espalhando terror e sedução."
+    synopsis: "A clássica história do vampiro Drácula.",
+    poster: "../images/dracula.jpg",
+    description: "O misterioso conde Drácula deixa seu castelo na Transilvânia e segue para Londres em busca de um antigo amor. Sua presença desperta uma série de acontecimentos sombrios, envolvendo paixão, terror e a luta contra uma das criaturas mais temidas da história."
   },
   {
     id: 6,
     title: "Missão Impossível",
     genre: "Ação",
-    description: "Um agente secreto enfrenta missões perigosas ao redor do mundo.",
-      poster: "../images/impossible.jpg",
-    synopsis: "Ethan Hunt lidera uma equipe para impedir ameaças globais e salvar o mundo."
+    synopsis: "Um agente secreto enfrenta missões perigosas ao redor do mundo.",
+    poster: "../images/impossible.jpg",
+    description: "Após ser acusado injustamente de traição, Ethan Hunt precisa descobrir quem está por trás da conspiração para limpar seu nome. Utilizando inteligência, tecnologia e muita ação, ele encara missões extremamente perigosas para impedir grandes ameaças."
   },
   {
     id: 7,
     title: "O Senhor dos Anéis",
     genre: "Fantasia",
-    description: "Uma jornada épica em um mundo de fantasia.",
-      poster: "../images/senhordosaneis.jpg",
-    synopsis: "Um hobbit parte em uma jornada para destruir um anel mágico e salvar o mundo."
+    synopsis: "Uma jornada épica em um mundo de fantasia.",
+    poster: "../images/senhordosaneis.jpg",
+    description: "O jovem hobbit Frodo recebe a missão de destruir um poderoso anel capaz de dominar toda a Terra-média. Ao lado de uma improvável sociedade de heróis, ele enfrenta criaturas perigosas e grandes desafios para impedir que o mal prevaleça."
   },
   {
     id: 8,
     title: "Cidade de Deus",
     genre: "Drama",
-    description: "A história de dois jovens crescendo em uma favela do Rio de Janeiro.",
-      poster: "../images/cidadedeus.jpg",
-    synopsis: "Buscapé e Dadinho vivem na Cidade de Deus, enfrentando violência, escolhas e o destino de suas vidas."
+    synopsis: "A história de dois jovens crescendo em uma favela do Rio de Janeiro.",
+    poster: "../images/cidadedeus.jpg",
+    description: "Acompanhando décadas de transformação da Cidade de Deus, o filme mostra como a violência influencia a vida de seus moradores. Enquanto Buscapé sonha em ser fotógrafo, outros jovens seguem caminhos marcados pelo crime e pela disputa de poder."
   },
   {
     id: 9,
     title: "John Wick",
     genre: "Ação",
-    description: "Um ex-assassino busca vingança após perder seu cachorro.",
-      poster: "../images/johnwick.jpeg",
-    synopsis: "John Wick retorna ao submundo do crime para se vingar de quem destruiu sua vida."
+    synopsis: "Um ex-assassino busca vingança após perder seu cachorro.",
+    poster: "../images/johnwick.jpeg",
+    description: "Depois de perder a última lembrança deixada por sua esposa, o lendário assassino John Wick retorna ao mundo do crime em busca de vingança. Sua caçada desperta antigos inimigos e revela o funcionamento de uma poderosa organização criminosa."
   },
   {
     id: 10,
     title: "Mad Max: Estrada da Fúria",
     genre: "Ação",
-    description: "Em um mundo pós-apocalíptico, um guerreiro luta pela sobrevivência.",
-      poster: "../images/madmax.jpg",
-    synopsis: "Max e Furiosa enfrentam tiranos e buscam liberdade em um deserto caótico."
+    synopsis: "Em um mundo pós-apocalíptico, um guerreiro luta pela sobrevivência.",
+    poster: "../images/madmax.jpg",
+    description: "Em um deserto devastado pela escassez de recursos, Max une forças com a guerreira Furiosa para escapar de um tirano impiedoso. Perseguições intensas, batalhas explosivas e uma busca por liberdade conduzem essa eletrizante jornada."
   },
   {
     id: 11,
     title: "Duro de Matar",
     genre: "Ação",
-    description: "Um policial enfrenta terroristas em um prédio durante o Natal.",
-      poster: "../images/durodematar.jpg",
-    synopsis: "John McClane luta contra terroristas para salvar sua esposa e outros reféns."
+    synopsis: "Um policial enfrenta terroristas em um prédio durante o Natal.",
+    poster: "../images/durodematar.jpg",
+    description: "Durante uma festa de Natal em um arranha-céu, o policial John McClane se vê preso quando terroristas invadem o prédio e fazem todos de reféns. Sozinho e com poucos recursos, ele precisa usar sua inteligência e coragem para salvar os inocentes."
   },
   {
     id: 12,
     title: "Missão Impossível: Protocolo Fantasma",
     genre: "Ação",
-    description: "Ethan Hunt enfrenta uma ameaça global.",
-      poster: "../images/missionimpo.jpg",
-    synopsis: "Ethan Hunt e sua equipe precisam impedir um ataque nuclear."
+    synopsis: "Ethan Hunt enfrenta uma ameaça global.",
+    poster: "../images/missionimpo.jpg",
+    description: "Após ser acusado de um atentado internacional, Ethan Hunt e sua equipe são abandonados pelo governo e precisam agir por conta própria. Em uma corrida contra o tempo, eles enfrentam perigosas missões para impedir uma guerra de proporções mundiais."
   },
   {
     id: 13,
     title: "O Protetor",
     genre: "Ação",
-    description: "Um ex-agente ajuda pessoas em perigo e enfrenta criminosos.",
-      poster: "../images/oprotetor.jpg",
-    synopsis: "Robert McCall usa suas habilidades para proteger inocentes e combater o crime."
+    synopsis: "Um ex-agente ajuda pessoas em perigo e enfrenta criminosos.",
+    poster: "../images/oprotetor.jpg",
+    description: "Robert McCall leva uma vida tranquila até decidir proteger uma jovem que está sendo explorada por uma organização criminosa. Utilizando suas habilidades adquiridas no passado, ele enfrenta criminosos impiedosos para fazer justiça."
   },
   {
     id: 14,
     title: "Os Mercenários",
     genre: "Ação",
-    description: "Um grupo de mercenários enfrenta missões explosivas ao redor do mundo.",
-      poster: "../images/osmercenarios.jpg",
-    synopsis: "Barney Ross lidera um time de mercenários em missões perigosas e cheias de ação."
+    synopsis: "Um grupo de mercenários enfrenta missões explosivas ao redor do mundo.",
+    poster: "../images/osmercenarios.jpg",
+    description: "Liderados por Barney Ross, um grupo de mercenários altamente treinados aceita missões extremamente perigosas em diferentes partes do mundo. Entre explosões, combates e muita ação, eles colocam suas vidas em risco para cumprir cada objetivo."
   },
   {
     id: 15,
     title: "Velocidade Máxima",
     genre: "Ação",
-    description: "Um policial precisa salvar passageiros de um ônibus com uma bomba.",
-      poster: "../images/velocidademaxima.jpg",
-    synopsis: "Jack Traven enfrenta um criminoso e tenta salvar todos em um ônibus em alta velocidade."
+    synopsis: "Um policial precisa salvar passageiros de um ônibus com uma bomba.",
+    poster: "../images/velocidademaxima.jpg",
+    description: "Quando um terrorista instala uma bomba em um ônibus que não pode reduzir a velocidade, o policial Jack Traven assume a missão de salvar todos os passageiros. Cada decisão precisa ser tomada rapidamente para evitar uma tragédia."
   },
   {
     id: 16,
     title: "Orgulho e Preconceito",
     genre: "Romance",
-    description: "Uma história de amor e superação de diferenças sociais.",
+    synopsis: "Uma história de amor e superação de diferenças sociais.",
     poster: "../images/orgulhoepreconceito.jpg",
-    synopsis: "Elizabeth Bennet e Mr. Darcy enfrentam preconceitos e diferenças para viver um grande amor."
+    description: "Elizabeth Bennet e o reservado Sr. Darcy se conhecem em meio a preconceitos, mal-entendidos e diferenças sociais. Aos poucos, ambos descobrem que o verdadeiro amor exige humildade, confiança e a capacidade de enxergar além das primeiras impressões."
   },
   {
     id: 17,
     title: "Diário de uma Paixão",
     genre: "Romance",
-    description: "Um casal luta para ficar junto apesar das adversidades.",
+    synopsis: "Um casal luta para ficar junto apesar das adversidades.",
     poster: "../images/diariodeumapaixao.jpg",
-    synopsis: "Noah e Allie vivem um romance intenso e inesquecível, marcado por obstáculos e memórias."
+    description: "Noah e Allie vivem um romance intenso durante a juventude, mas são separados pelas circunstâncias da vida. Mesmo após muitos anos, seus sentimentos continuam vivos, mostrando a força de um amor capaz de superar o tempo."
   },
   {
     id: 18,
     title: "Como Eu Era Antes de Você",
     genre: "Romance",
-    description: "Uma jovem cuida de um homem tetraplégico e transforma sua vida.",
+    synopsis: "Uma jovem cuida de um homem tetraplégico e transforma sua vida.",
     poster: "../images/comoeueraantesdevc.jpg",
-    synopsis: "Louisa Clark muda a vida de Will Traynor, mostrando que o amor pode transformar tudo."
+    description: "Louisa Clark aceita o desafio de cuidar de Will Traynor, um homem que perdeu a vontade de viver após um grave acidente. A convivência entre os dois transforma suas perspectivas e revela como pequenas atitudes podem mudar uma vida."
   },
   {
     id: 19,
     title: "Simplesmente Amor",
     genre: "Romance",
-    description: "Histórias de amor entrelaçadas durante o Natal em Londres.",
+    synopsis: "Histórias de amor entrelaçadas durante o Natal em Londres.",
     poster: "../images/simplesmenteamor.jpg",
-    synopsis: "Diversas histórias de amor se cruzam em Londres durante o Natal, mostrando diferentes formas de amar."
+    description: "Diversas histórias se cruzam em Londres durante o período natalino, mostrando diferentes formas de amor, amizade e reencontros. Cada personagem enfrenta desafios únicos enquanto busca felicidade ao lado das pessoas que ama."
   },
   {
     id: 20,
     title: "A Proposta",
     genre: "Romance",
-    description: "Uma chefe e seu assistente fingem um casamento para evitar deportação.",
+    synopsis: "Uma chefe e seu assistente fingem um casamento para evitar deportação.",
     poster: "../images/aproposta.jpg",
-    synopsis: "Margaret e Andrew fingem um casamento, mas acabam se apaixonando de verdade."
+    description: "Para evitar ser deportada, uma exigente executiva convence seu assistente a fingir que os dois estão noivos. O que começa como um acordo profissional logo se transforma em uma divertida sequência de situações inesperadas e sentimentos verdadeiros."
   },
   {
     id: 21,
     title: "Um Lugar Chamado Notting Hill",
     genre: "Romance",
-    description: "Um romance improvável entre uma estrela de cinema e um dono de livraria.",
+    synopsis: "Um romance improvável entre uma estrela de cinema e um dono de livraria.",
     poster: "../images/nothinghill.jpg",
-    synopsis: "William e Anna vivem um romance inesperado entre o glamour de Hollywood e a simplicidade de Londres."
+    description: "William, um simples dono de livraria em Londres, tem sua vida transformada ao conhecer Anna Scott, uma famosa atriz de Hollywood. Entre a fama, a rotina e os desafios de mundos completamente diferentes, os dois descobrem que o amor pode surgir onde menos se espera."
   },
   {
     id: 22,
     title: "A Culpa é das Estrelas",
     genre: "Romance",
-    description: "Dois adolescentes com câncer vivem um romance emocionante.",
+    synopsis: "Dois adolescentes com câncer vivem um romance emocionante.",
     poster: "../images/aculpaehdasestrelas.jpg",
-    synopsis: "Hazel e Gus enfrentam desafios e vivem um amor intenso apesar das dificuldades."
+    description: "Hazel Grace conhece Gus durante um grupo de apoio e os dois desenvolvem uma forte amizade que logo se transforma em um grande amor. Juntos, enfrentam os desafios da doença enquanto aprendem a valorizar cada momento vivido."
   },
   {
     id: 23,
     title: "Matrix",
     genre: "Ficção Científica",
-    description: "Um hacker descobre a verdadeira natureza da realidade.",
+    synopsis: "Um hacker descobre a verdadeira natureza da realidade.",
     poster: "../images/matrix.jpeg",
-    synopsis: "Um hacker descobre a verdadeira natureza da realidade e se une a uma resistência para lutar contra os controladores."
+    description: "Neo, um talentoso hacker, descobre que o mundo em que vive é apenas uma simulação criada por máquinas. Ao se juntar a um grupo de rebeldes, ele embarca em uma jornada repleta de ação para libertar a humanidade do controle artificial."
   },
   {
     id: 24,
     title: "Blade Runner",
     genre: "Ficção Científica",
-    description: "Um caçador de androides em um futuro distópico.",
+    synopsis: "Um caçador de androides em um futuro distópico.",
     poster: "../images/bladerunner.jpg",
-    synopsis: "Um caçador de androides em um futuro distópico onde ele precisa enfrentar os limites da humanidade e da tecnologia."
+    description: "Em uma sociedade futurista dominada pela tecnologia, Rick Deckard recebe a missão de caçar androides fugitivos quase indistinguíveis dos humanos. Durante sua investigação, ele passa a questionar os limites entre humanidade, memória e identidade."
   },
   {
     id: 25,
     title: "A Origem",
     genre: "Ficção Científica",
-    description: "Um ladrão invade sonhos para roubar segredos e implantar ideias.",
+    synopsis: "Um ladrão invade sonhos para roubar segredos e implantar ideias.",
     poster: "../images/origem.jpg",
-    synopsis: "Dom Cobb é um especialista em roubar segredos do inconsciente das pessoas durante o sono, mas recebe a missão de implantar uma ideia na mente de alguém."
+    description: "Dom Cobb é especialista em invadir os sonhos das pessoas para roubar informações valiosas. Ao receber a missão inédita de implantar uma ideia na mente de um alvo, ele enfrenta perigos que desafiam a lógica e a própria realidade."
   },
   {
     id: 26,
     title: "O Homem Bicentenário",
     genre: "Ficção Científica",
-    description: "Um robô busca se tornar humano ao longo de dois séculos.",
+    synopsis: "Um robô busca se tornar humano ao longo de dois séculos.",
     poster: "../images/bicentenario.jpg",
-    synopsis: "Andrew, um robô, luta para conquistar sua humanidade e liberdade."
+    description: "Andrew é um robô que desenvolve sentimentos, criatividade e o desejo de viver como um ser humano. Ao longo de duzentos anos, ele enfrenta desafios para conquistar liberdade, aceitação e o direito de ser reconhecido por sua humanidade."
   },
   {
     id: 27,
     title: "O Quinto Elemento",
     genre: "Ficção Científica",
-    description: "Um taxista e uma mulher misteriosa salvam o mundo de uma ameaça cósmica.",
+    synopsis: "Um taxista e uma mulher misteriosa salvam o mundo de uma ameaça cósmica.",
     poster: "../images/quintoelemento.jpg",
-    synopsis: "Korben Dallas e Leeloo enfrentam forças do mal para salvar a Terra."
+    description: "Korben Dallas leva uma vida comum até encontrar Leeloo, uma jovem com habilidades extraordinárias. Juntos, eles precisam reunir os elementos sagrados capazes de impedir uma força maligna que ameaça destruir toda a humanidade."
   },
   {
     id: 28,
     title: "Minority Report: A Nova Lei",
     genre: "Ficção Científica",
-    description: "Um policial investiga crimes antes que eles aconteçam.",
+    synopsis: "Um policial investiga crimes antes que eles aconteçam.",
     poster: "../images/minoriryreport.jpg",
-    synopsis: "John Anderton descobre uma conspiração enquanto trabalha com o sistema de prevenção de crimes."
+    description: "Em um futuro onde assassinatos podem ser previstos antes de acontecerem, o policial John Anderton acredita plenamente no sistema de prevenção. Tudo muda quando ele próprio é acusado de um crime que ainda não aconteceu, iniciando uma corrida para provar sua inocência."
   },
   {
     id: 29,
     title: "A Chegada",
     genre: "Ficção Científica",
-    description: "Uma linguista tenta se comunicar com alienígenas que chegam à Terra.",
+    synopsis: "Uma linguista tenta se comunicar com alienígenas que chegam à Terra.",
     poster: "../images/achegada.jpg",
-    synopsis: "Louise Banks desvenda o idioma dos alienígenas e descobre segredos sobre o tempo e a humanidade."
+    description: "Quando misteriosas naves espaciais aparecem em diferentes partes do planeta, a linguista Louise Banks é chamada para estabelecer comunicação com seus ocupantes. À medida que compreende sua linguagem, ela faz descobertas capazes de mudar sua visão sobre o tempo e a vida."
   },
   {
     id: 30,
     title: "Se Beber, Não Case",
     genre: "Comédia",
-    description: "Três amigos acordam em Las Vegas sem lembrar da noite anterior.",
+    synopsis: "Três amigos acordam em Las Vegas sem lembrar da noite anterior.",
     poster: "../images/sebebernaocase.jpg",
-    synopsis: "Após uma noite de festas em Las Vegas, três amigos precisam encontrar o noivo desaparecido antes do casamento."
+    description: "Após uma despedida de solteiro em Las Vegas, três amigos acordam sem qualquer lembrança da noite anterior e descobrem que o noivo desapareceu. Agora, eles precisam juntar as pistas e enfrentar situações absurdas para encontrá-lo antes do casamento."
   },
   {
     id: 31,
     title: "Superbad - É Hoje",
     genre: "Comédia",
-    description: "Adolescentes tentam aproveitar ao máximo a última festa antes da faculdade.",
+    synopsis: "Adolescentes tentam aproveitar ao máximo a última festa antes da faculdade.",
     poster: "../images/superbad.jpg",
-    synopsis: "Dois amigos embarcam em uma noite cheia de confusões para conseguir bebidas e conquistar garotas."
+    description: "Os inseparáveis amigos Seth e Evan decidem aproveitar ao máximo seus últimos dias antes de seguirem caminhos diferentes. Em uma noite repleta de confusões, festas e situações inesperadas, eles descobrem o verdadeiro valor da amizade."
   },
   {
     id: 32,
     title: "O Máscara",
     genre: "Comédia",
-    description: "Um homem tímido encontra uma máscara mágica que transforma sua personalidade.",
+    synopsis: "Um homem tímido encontra uma máscara mágica que transforma sua personalidade.",
     poster: "../images/mascara.jpg",
-    synopsis: "Stanley Ipkiss descobre uma máscara que lhe dá poderes e o transforma em um personagem extravagante."
+    description: "Stanley Ipkiss leva uma vida comum até encontrar uma misteriosa máscara que lhe concede poderes extraordinários e uma personalidade completamente diferente. Com muito humor e confusão, ele precisa lidar com os desafios de sua nova identidade."
   },
   {
     id: 33,
     title: "Click",
     genre: "Comédia",
-    description: "Um homem recebe um controle remoto que pode controlar sua vida.",
+    synopsis: "Um homem recebe um controle remoto que pode controlar sua vida.",
     poster: "../images/click.jpg",
-    synopsis: "Michael Newman descobre um controle remoto mágico que pode avançar, pausar e retroceder momentos de sua vida."
+    description: "Michael Newman recebe um controle remoto capaz de avançar, pausar e retroceder momentos de sua vida. No início tudo parece perfeito, mas ele logo percebe que cada escolha tem consequências importantes para seu futuro e sua família."
   },
   {
     id: 34,
     title: "Esqueceram de Mim",
     genre: "Comédia",
-    description: "Um garoto é deixado sozinho em casa e precisa se defender de ladrões.",
+    synopsis: "Um garoto é deixado sozinho em casa e precisa se defender de ladrões.",
     poster: "../images/esqueceramdemim.jpg",
-    synopsis: "Kevin é esquecido pela família e precisa proteger sua casa de dois ladrões atrapalhados."
+    description: "Esquecido em casa durante as férias de Natal, Kevin precisa aprender a se virar sozinho. Quando dois ladrões tentam invadir sua casa, ele cria armadilhas criativas e divertidas para proteger seu lar."
   },
   {
     id: 35,
     title: "A Mentira",
     genre: "Comédia",
-    description: "Uma estudante inventa uma mentira que foge do controle.",
+    synopsis: "Uma estudante inventa uma mentira que foge do controle.",
     poster: "../images/amentira.jpg",
-    synopsis: "Olive inventa uma mentira sobre sua vida amorosa e acaba virando o centro das atenções na escola."
+    description: "Depois que um boato sobre sua vida amorosa se espalha pela escola, Olive decide tirar proveito da situação. No entanto, suas pequenas mentiras acabam gerando consequências inesperadas e transformando completamente sua reputação."
   },
   {
     id: 36,
     title: "Jumanji: Bem-vindo à Selva",
     genre: "Comédia",
-    description: "Quatro adolescentes são transportados para um videogame.",
+    synopsis: "Quatro adolescentes são transportados para um videogame.",
     poster: "../images/jumanji.jpg",
-    synopsis: "Quatro adolescentes entram em um videogame e precisam vencer desafios para voltar ao mundo real."
+    description: "Quatro estudantes encontram um antigo videogame e acabam sendo transportados para dentro dele, assumindo novos corpos e habilidades. Para voltar ao mundo real, eles precisam enfrentar desafios perigosos e trabalhar em equipe."
   },
   {
     id: 37,
     title: "O Fantasma da Ópera",
     genre: "Gótico",
-    description: "Um fantasma assombra uma ópera de Paris.",
+    synopsis: "Um fantasma assombra uma ópera de Paris.",
     poster: "../images/fastasmadaopera.jpg",
-    synopsis: "O Fantasma se apaixona por uma jovem cantora e cria um clima de mistério e medo."
+    description: "Escondido nos subterrâneos da Ópera de Paris, um misterioso homem mascarado desenvolve uma obsessão pela jovem cantora Christine. Entre romance, mistério e tragédia, sua presença transforma a vida de todos ao redor."
   },
   {
     id: 38,
     title: "Sweeney Todd: O Barbeiro Demoníaco da Rua Fleet",
     genre: "Gótico",
-    description: "Um barbeiro busca vingança em Londres.",
+    synopsis: "Um barbeiro busca vingança em Londres.",
     poster: "../images/obarbeiro.jpg",
-    synopsis: "Sweeney Todd retorna a Londres para se vingar, criando uma série de assassinatos macabros."
+    description: "Após anos de injustiça, Benjamin Barker retorna a Londres com a identidade de Sweeney Todd e um único objetivo: vingança. Sua busca o leva por um caminho sombrio, marcado por crimes, mistério e obsessão."
   },
   {
     id: 39,
     title: "A Lenda do Cavaleiro Sem Cabeça",
     genre: "Gótico",
-    description: "Um investigador enfrenta um cavaleiro fantasmagórico.",
+    synopsis: "Um investigador enfrenta um cavaleiro fantasmagórico.",
     poster: "../images/alendadocavaleiro.jpg",
-    synopsis: "Ichabod Crane investiga assassinatos misteriosos causados por um cavaleiro sem cabeça."
+    description: "O investigador Ichabod Crane é enviado para uma pequena vila onde uma série de assassinatos misteriosos assusta os moradores. Conforme avança nas investigações, ele se depara com uma lenda aterrorizante que desafia toda a lógica."
   },
   {
     id: 40,
     title: "O Corvo",
     genre: "Gótico",
-    description: "Um homem volta dos mortos para buscar vingança.",
+    synopsis: "Um homem volta dos mortos para buscar vingança.",
     poster: "../images/ocorvo.jpg",
-    synopsis: "Eric Draven retorna do além para vingar sua morte e a de sua noiva."
+    description: "Após ser brutalmente assassinado junto com sua noiva, Eric Draven retorna do mundo dos mortos em busca de justiça. Guiado por um misterioso corvo, ele enfrenta aqueles que destruíram sua vida em uma jornada marcada por ação e sobrenatural."
   },
   {
     id: 41,
     title: "Entrevista com o Vampiro",
     genre: "Gótico",
-    description: "Dois vampiros contam suas histórias ao longo dos séculos.",
+    synopsis: "Dois vampiros contam suas histórias ao longo dos séculos.",
     poster: "../images/entrevistacomovamp.jpg",
-    synopsis: "Louis e Lestat exploram a imortalidade, o amor e a solidão."
+    description: "Louis decide revelar sua história a um jornalista, narrando sua transformação em vampiro e os séculos vividos ao lado do enigmático Lestat. Em meio à imortalidade, os dois enfrentam conflitos, perdas e os dilemas de sua própria existência."
   },
   {
     id: 42,
     title: "O Labirinto do Fauno",
     genre: "Gótico",
-    description: "Uma menina descobre um mundo mágico e sombrio durante a guerra civil espanhola.",
+    synopsis: "Uma menina descobre um mundo mágico e sombrio durante a guerra civil espanhola.",
     poster: "../images/olabirintodofauno.jpg",
-    synopsis: "Ofelia encontra um fauno misterioso e precisa cumprir tarefas mágicas em um mundo sombrio."
+    description: "Durante um período marcado pela guerra, a jovem Ofelia encontra um misterioso fauno que a conduz por um mundo repleto de criaturas fantásticas e desafios perigosos. Enquanto busca cumprir antigas profecias, ela precisa enfrentar a dura realidade ao seu redor."
   },
   {
     id: 43,
     title: "A Casa das Almas Perdidas",
     genre: "Gótico",
-    description: "Uma família enfrenta espíritos em uma mansão assombrada.",
+    synopsis: "Uma família enfrenta espíritos em uma mansão assombrada.",
     poster: "../images/casa das almas perdidas.jpg",
-    synopsis: "Uma família luta para sobreviver em uma casa cheia de espíritos e segredos."
+    description: "Ao se mudar para uma antiga mansão, uma família passa a vivenciar acontecimentos sobrenaturais e assustadores. Conforme segredos do passado vêm à tona, eles precisam lutar para sobreviver às forças que habitam a casa."
   },
   {
     id: 44,
     title: "Procurando Nemo",
     genre: "Animação",
-    description: "Um peixe-palhaço atravessa o oceano para encontrar seu filho.",
+    synopsis: "Um peixe-palhaço atravessa o oceano para encontrar seu filho.",
     poster: "../images/procurandonemo.jpg",
-    synopsis: "Marlin e Dory embarcam em uma aventura para encontrar Nemo, que foi capturado por mergulhadores."
+    description: "Depois que seu filho Nemo é capturado por mergulhadores, Marlin inicia uma longa jornada pelo oceano para resgatá-lo. Ao lado da divertida Dory, ele enfrenta perigos, faz novas amizades e aprende importantes lições sobre confiança e coragem."
   },
   {
     id: 45,
     title: "Divertida Mente",
     genre: "Animação",
-    description: "As emoções de uma menina enfrentam mudanças em sua vida.",
+    synopsis: "As emoções de uma menina enfrentam mudanças em sua vida.",
     poster: "../images/divertidamente.jpg",
-    synopsis: "Alegria, Tristeza, Raiva, Medo e Nojinho ajudam Riley a lidar com uma mudança de cidade."
+    description: "Quando Riley se muda para uma nova cidade, suas emoções precisam aprender a lidar com mudanças inesperadas. Alegria, Tristeza, Medo, Raiva e Nojinho embarcam em uma divertida aventura para ajudá-la a superar esse momento de sua vida."
   },
   {
     id: 46,
     title: "Moana",
     genre: "Animação",
-    description: "Uma jovem embarca em uma jornada pelo oceano para salvar seu povo.",
+    synopsis: "Uma jovem embarca em uma jornada pelo oceano para salvar seu povo.",
     poster: "../images/moana.jpg",
-    synopsis: "Moana desafia o oceano e encontra Maui para restaurar o coração de Te Fiti."
+    description: "Determinada a salvar sua ilha, Moana parte em uma grande aventura pelo oceano em busca do semideus Maui. Durante a jornada, ela enfrenta criaturas mágicas, supera desafios e descobre seu verdadeiro destino como líder."
   },
   {
     id: 47,
     title: "Frozen",
     genre: "Animação",
-    description: "Duas irmãs enfrentam desafios para salvar seu reino do inverno eterno.",
+    synopsis: "Duas irmãs enfrentam desafios para salvar seu reino do inverno eterno.",
     poster: "../images/froze.jpg",
-    synopsis: "Elsa e Anna lutam para salvar Arendelle e descobrir o poder do amor verdadeiro."
+    description: "Após um poderoso feitiço mergulhar Arendelle em um inverno sem fim, Anna parte em uma jornada para encontrar sua irmã Elsa. Ao lado de novos amigos, ela enfrenta diversos desafios para restaurar o reino e fortalecer os laços familiares."
   },
   {
     id: 48,
     title: "Meu Malvado Favorito",
     genre: "Animação",
-    description: "Um vilão aprende o valor da família ao adotar três meninas.",
+    synopsis: "Um vilão aprende o valor da família ao adotar três meninas.",
     poster: "../images/malvadofav.jpg",
-    synopsis: "Gru planeja roubar a lua, mas sua vida muda ao adotar três meninas."
+    description: "Gru é um famoso vilão que planeja realizar o maior roubo de sua carreira, mas seus planos mudam ao adotar três meninas órfãs. Aos poucos, ele descobre que o carinho e a família podem ser mais valiosos do que qualquer conquista."
   },
   {
     id: 49,
     title: "Zootopia",
     genre: "Animação",
-    description: "Uma coelha policial e uma raposa enfrentam mistérios em uma cidade de animais.",
+    synopsis: "Uma coelha policial e uma raposa enfrentam mistérios em uma cidade de animais.",
     poster: "../images/zootopia.jpg",
-    synopsis: "Judy Hopps e Nick Wilde desvendam um mistério em Zootopia, onde todos os animais convivem."
+    description: "A determinada policial Judy Hopps une forças com a esperta raposa Nick Wilde para investigar o desaparecimento de vários animais. Durante a investigação, os dois descobrem uma conspiração que ameaça toda a convivência em Zootopia."
   },
   {
     id: 50,
     title: "Monstros S.A.",
     genre: "Animação",
-    description: "Monstros trabalham em uma fábrica de sustos para gerar energia.",
+    synopsis: "Monstros trabalham em uma fábrica de sustos para gerar energia.",
     poster: "../images/monstrossa.jpg",
-    synopsis: "Sulley e Mike precisam devolver a menina Boo ao seu mundo sem serem descobertos."
+    description: "Sulley e Mike trabalham em uma fábrica que transforma sustos em energia para a cidade dos monstros. Tudo muda quando a pequena Boo entra acidentalmente nesse mundo, dando início a uma divertida aventura repleta de amizade, humor e descobertas."
   },
 ]
+
+// parte do carrossel da issue de laerte ficou aqui pq fez mais sentido, já que usa diretamente a lista de filmes
+
+const destaque = [...movies].sort(() => Math.random() - 0.5).slice(0, 5);
+
+const poster = document.getElementById("heroPoster");
+const titulo = document.getElementById("heroTitle");
+const genero = document.getElementById("heroGenre");
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+
+let atual = 0;
+let intervaloEntreCards;
+
+function renderHero(){
+  poster.src = destaque[atual].poster;
+  titulo.innerText = destaque[atual].title;
+  genero.innerText = destaque[atual].genre;
+}
+
+function iniciarNovoIntervalo() {
+  clearInterval(intervaloEntreCards);
+
+  intervaloEntreCards = setInterval( ()=> {next.click();} ,2500);
+}
+
+renderHero();
+iniciarNovoIntervalo();
+
+next.onclick=()=>{
+  atual++;
+  
+  if(atual==destaque.length) atual = 0;
+
+  renderHero();
+  iniciarNovoIntervalo();
+}
+
+prev.onclick=()=>{
+  atual--;
+  
+  if(atual<0) atual = destaque.length-1;
+  
+  renderHero();
+  iniciarNovoIntervalo();
+}

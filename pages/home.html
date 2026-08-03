@@ -6,33 +6,43 @@
     <link rel="stylesheet" href="../styles/style.css">
     <title>CineBox</title>
 </head>
-<header class="top-bar">
-    <div class="user-area">
-        <img src="../images/logo.png" alt="logo">
-        <span id="welcome"></span>
-        <button id="logout-btn">Sair</button>
-    </div>
-</header>
 <body>
+<header class="top-bar">
+    <div class="header-main">
+        <a class="brand" href="home.html">
+            <img src="../images/logo.png" alt="Logo CineBox">
+            <span>CineBox</span>
+        </a>
+        <div class="header-actions">
+            <div class="logged-user">
+                <span class="user-label">Bem-vindo</span>
+                <span id="welcome"></span>
+            </div>
+            <button id="logout-btn">Sair</button>
+        </div>
+    </div>
+    <nav class="gender-bar" aria-label="Categorias de filmes">
+        <a class="gender-button" onclick="filterMovies('Ação')">Ação</a>
+        <a class="gender-button" onclick="filterMovies('Comédia')">Comédia</a>
+        <a class="gender-button" onclick="filterMovies('Ficção Científica')">Ficção Científica</a>
+        <a class="gender-button" onclick="filterMovies('Romance')">Romance</a>
+        <a class="gender-button" onclick="filterMovies('Animação')">Animações</a>
+        <a class="gender-button" onclick="filterMovies('Gótico')">Góticos</a>
+    </nav>
+</header>
     
     <div class="top-div">
-        <h1>FILMES</h1>
+        <div class="catalog-intro">
+            <span class="section-kicker">CATÁLOGO CINEBOX</span>
+            <h1>Encontre seu <span>próximo filme</span></h1>
+            <p>Explore histórias, gêneros e clássicos para todos os momentos.</p>
+        </div>
     </div>
     
-    <div class="gender-bar">
-        <a class="gender-button" onclick="filterMovies('Ação')" >Ação</a>
-        <a class="gender-button" onclick="filterMovies('Comédia')" >Comédia</a>
-        <a class="gender-button" onclick="filterMovies('Ficção Científica')" >Ficção Científica</a>
-        <a class="gender-button" onclick="filterMovies('Romance')" >Romance</a>
-        <a class="gender-button" onclick="filterMovies('Animação')" >Animações</a>
-        <a class="gender-button" onclick="filterMovies('Gótico')" >Góticos</a>
-    
-    </div>
-    
-    <div class="filmes" id="filmes"></div>
+    <main class="filmes" id="filmes"></main>
     
     <script src="../scripts/data.js"></script>
     <script src="../scripts/filmes.js"></script>
-    <script src="../scripts/auth/logout.js"></script>
+    <script src="../scripts/auth/lougout.js"></script>
 </body>
 </html>

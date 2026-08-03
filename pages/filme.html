@@ -6,17 +6,29 @@
     <title id="page-title"></title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+<body>
 <header class="top-bar">
-    <div class="user-area">
-        <img src="../images/logo.png" alt="logo">
-        <button class="voltar-btn" onclick="window.history.back()">Voltar</button>
+    <div class="header-main">
+        <a class="brand" href="home.html">
+            <img src="../images/logo.png" alt="Logo CineBox">
+            <span>CineBox</span>
+        </a>
+        <div class="header-actions">
+            <button class="voltar-btn" onclick="window.history.back()">Voltar</button>
+            <div class="logged-user">
+                <span class="user-label">Bem-vindo</span>
+                <span id="welcome"></span>
+            </div>
+            <button id="logout-btn">Sair</button>
+        </div>
     </div>
 </header>
-<body>
 
-    <div class="title-desc">
+    <div class="title-desc" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
         <h2 class="movie-title" id="title"></h2>
         <p class="movie-description" id="description"></p>
+        <div id="average-rating" style="margin-top: 10px; font-weight: bold; font-size: 1.1rem; color: #f39c12;"></div>
+        <img id="movie-poster" src="" alt="Capa do filme" style="max-width: 300px; display: none; border-radius: 8px; margin-top: 15px;">
     </div>
 
     <div class="av-input">
@@ -38,5 +50,6 @@
 
     <script src="../scripts/data.js"></script>
     <script src="../scripts/filmeReview.js"></script>
+    <script src="../scripts/auth/lougout.js"></script>
 </body>
 </html>
